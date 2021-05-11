@@ -1,0 +1,25 @@
+package ex02;
+
+import java.util.function.IntBinaryOperator;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int a = 10;
+		int b = 20;
+		int result = 0;
+		
+		IntBinaryOperator operator;
+		
+		//정적 메서드 참조
+		//1. 일반적인 내용
+		
+		operator = (x,y)->{return Calc.staticMethod(x, y);};
+		result = operator.applyAsInt(a, b);
+		
+		System.out.println("정적 메서드 참조 결과1 :"+result);
+		
+
+	}
+
+}

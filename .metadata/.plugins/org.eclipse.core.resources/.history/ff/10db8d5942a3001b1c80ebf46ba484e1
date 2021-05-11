@@ -1,0 +1,49 @@
+package com.green.Controller;
+
+import com.green.View.View;
+import com.green.storage.DB;
+
+public class Controller {
+
+	public Controller( ){
+		init();
+	}
+
+	private void init() {
+		boolean run = true;
+		
+		while(run) { // 메인 메뉴
+			int selectMenu = View.menu();
+			switch(selectMenu) {
+			case 1 : // 회원가입
+				View.signup();
+				break;
+			case 2 : // 로그인
+				String[] loginUserInfoView =View.signin();
+				for(int i=0;i<DB.members.size();i++) {
+					if(userId.equals(DB.members.get(i).getUserid())
+							&&userPw.equals(DB.members.get(i).getUserPassword())){
+						
+						
+					
+				}
+				
+			}
+				break;
+			case 3 : // 비회원으로 게시물 조회
+				View.boardChk();
+				break;
+			case 4 : // 프로그램 종료
+				View.exitProgran();
+				break;
+			default : View.userfault();
+				break;
+
+
+
+			}
+
+		}
+
+	}
+}

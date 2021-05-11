@@ -1,0 +1,16 @@
+package ex01;
+
+public class Main_Sring {
+
+	public static void main(String[] args) {
+		char c = ' ';
+		String s = "";
+		
+		String str1 = "Java And Python Programming";
+		
+		System.out.println(str1.toLowerCase());
+		System.out.println(str1.toUpperCase()());
+
+	}
+
+}

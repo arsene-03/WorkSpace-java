@@ -1,0 +1,10 @@
+package com.green.q9;
+
+import java.util.ArrayList;
+
+import com.green.dto.Member;
+
+public class DB {
+	ArrayList<Board> boards = new ArrayList<>();
+	ArrayList<Member> members = new AraayList<>();
+}

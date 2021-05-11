@@ -1,0 +1,40 @@
+package test;
+
+import java.util.Scanner;
+
+public class Q2 {
+
+	public static void main(String[] args) {
+
+		//조건1. while 문으로 구구단
+		int i = 2; //단
+		while(i<=9) {
+			System.out.printf("****%d단****\n",i);
+			int j = 1;
+			while(j<=9) {
+				System.out.printf("%d X %d = %d\n",i,j,i*j);
+				j++;
+			}
+			i++;
+		}
+		System.out.println("-------------------------------");
+
+		//조건 2. do while 문으로
+		Scanner scan = new Scanner(System.in);
+		
+		i = 2;
+		do {
+			System.out.printf("****%d단****\n",i);
+			int j = 1;
+			do {
+				System.out.printf("%d X %d = %d\n",i,j,i*j);
+				j++;
+			}while(j<=9);
+			i++;
+		}while(i<=9);
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,28 @@
+package ex01;
+
+public class Main_Sring {
+
+	public static void main(String[] args) {
+		char c = ' ';
+		String s = "";
+		
+		String str1 = "Java And Python Programming";
+		
+		System.out.println(str1.toLowerCase());//소문자
+		System.out.println(str1.toUpperCase());//대문자
+		
+		String str2 = "       java      ";
+		System.out.println(str2);
+		System.out.println(str2.trim());
+
+		
+		String str3 = "Java Programmintg";
+		byte[] bytes = str3.getBytes();
+		
+		for(byte b:bytes) {
+			System.out.println(b);
+			System.out.print(",");
+		}
+	}
+
+}

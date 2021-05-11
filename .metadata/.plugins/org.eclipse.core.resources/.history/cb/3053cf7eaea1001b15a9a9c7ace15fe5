@@ -1,0 +1,21 @@
+package com.green.controller;
+
+import com.green.view.ViewBuyer;
+
+public class ControllerBuyer {
+	private int session = -1;
+	
+	public ControllerBuyer(int idx) {
+		this.session = idx;
+		init();
+	}
+
+	private void init() {
+		int selectMenu=ViewBuyer.menu();
+		
+		switch(selectMenu) {
+		
+		}
+		
+	}
+}

@@ -1,0 +1,51 @@
+package test;
+
+public class Student {
+	private String id;
+	private String pw;
+	private String name;
+	private int[] scores;
+	
+	public Student(String id, String pw, String name, int scores) {
+		
+		this.id = id;
+		this.pw = pw;
+		this.name = name;
+		this.scores = scores;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getPw() {
+		return pw;
+	}
+
+	public void setPw(String pw) {
+		this.pw = pw;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getScores() {
+		return scores;
+	}
+
+	public void setScores(int scores) {
+		this.scores = scores;
+	}
+	
+	
+	
+}

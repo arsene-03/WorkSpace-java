@@ -1,0 +1,9 @@
+package com.green.Controller;
+
+public class Controller_Member {
+	private int session = -1;
+	
+	public Controller_Member(int idx) {
+		this.session = idx;
+	}
+}

@@ -1,0 +1,36 @@
+package com.green.Controller;
+
+import com.green.View.View;
+
+public class Controller {
+
+	public Controller( ){
+		init();
+	}
+
+	private void init() {
+		boolean run = true;
+		
+		while(run) { // 메인 메뉴
+			int selectMenu = View.menu();
+			switch(selectMenu) {
+			case 1 : // 회원가입
+				break;
+			case 2 : // 로그인
+				break;
+			case 3 : // 비회원으로 게시물 조회
+				break;
+			case 4 : // 프로그램 종료
+				View.exitProgran();
+				break;
+			default : View.userfault();
+				break;
+
+
+
+			}
+
+		}
+
+	}
+}

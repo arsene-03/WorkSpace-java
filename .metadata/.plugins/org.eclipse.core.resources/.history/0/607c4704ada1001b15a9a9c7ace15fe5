@@ -1,0 +1,36 @@
+package com.green.view;
+
+import com.green.main.Main;
+import com.green.storiage.Storage;
+
+public class ViewBuyer {
+
+	public static int menu() {
+		System.out.println("저희 쇼핑몰에 오신것을 환영합니다.");
+		System.out.println("1. 물품목록 보기");
+		System.out.println("2. 장바구니 보기");
+		System.out.println("3. 개인정보 보기");
+		System.out.println("4. 로그아웃");
+		int selectNum = Integer.parseInt(Main.scan.nextLine());
+		
+		return selectNum;
+	}
+
+	public static void userError() {
+		System.out.println("잘못 입력했습니다.");
+		System.out.println("다시 확인해 주세요.");
+		
+	}
+
+	public static void productList() {
+		System.out.println("저희 쇼핑몰의 등록된 물품리스트 입니다.");
+		for(int i=0;i<Storage.products.size();i++) {
+			System.out.println((i+1)+"번째 물품 입니다.");
+			System.out.println("물품명 : "+Storage.products.get(i).getProductName());
+			System.out.println("정가 : "+Storage.products.get(i).getPrice());
+			System.out.println("***************************");
+		}
+		
+	}
+
+}

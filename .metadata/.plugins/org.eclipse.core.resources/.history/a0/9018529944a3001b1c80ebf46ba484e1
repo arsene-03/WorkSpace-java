@@ -1,0 +1,21 @@
+package com.green.View;
+
+import com.green.storage.DB;
+
+public class ViewMember {
+
+
+	public static int membersMenu(int session) {
+		System.out.println("***\n안녕하세요 "+DB.members.get(session).getUserName()+"님***");
+		System.out.println("원하는 기능을 선택해주세요.");
+		ystem.out.println("1. 회원가입");
+		System.out.println("2. 로그인");
+		System.out.println("3. 비회원으로 게시물 조회하기");
+		System.out.println("4. 프로그램 종료");
+		System.out.print("> ");
+		int selectMenu = ViewMain.select();
+		return selectMenu;
+		
+	}
+
+}

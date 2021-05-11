@@ -1,0 +1,26 @@
+package test;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Q4 {
+	static Scanner scan = new Scanner(System.in);
+	public static void main(String[] args) {
+		
+		System.out.print("구하려는 구구단의 단을 입력하세요.>");
+		int dan;
+		dan = scan.nextLine();
+		gugudan(dan);
+
+	}
+
+	private static void gugudan(int dan) throws InputMismatchException {
+		System.out.print("어디까지 구할 것인지 입력하세요.>");
+		int end = Integer.parseInt(scan.nextLine());
+		for(int i=0;i<end;i++) {
+			System.out.println(dan+" X "+(i+1)+" = "+dan*(i+1)+"\n");
+		}
+			
+	}
+
+}

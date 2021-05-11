@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+	</section>
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.FileSystem"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="PreferencesImportWizard">
+	</section>
+	<section name="FileSystemImportWizard">
+		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\GREEN\Downloads\ex01_clone"/>
+			<item value="C:\Users\GREEN\Downloads\folder (2)\src\ex01"/>
+			<item value="C:\Users\GREEN\Downloads\folder (1)\src\ex03"/>
+			<item value="C:\Users\GREEN\Downloads\folder (1)\src\ex02"/>
+			<item value="C:\Users\GREEN\Downloads\folder (1)\src\ex01"/>
+			<item value="C:\Users\GREEN\Downloads\folder\src\com\green\view"/>
+			<item value="C:\Users\GREEN\Downloads\folder\src\com\green\storage"/>
+			<item value="C:\Users\GREEN\Downloads\folder\src\com\green\main"/>
+			<item value="C:\Users\GREEN\Downloads\folder\src\com\green\dto"/>
+			<item value="C:\Users\GREEN\Downloads\folder\src\com\green\controller"/>
+			<item value="C:\Study\WorkSpace-java"/>
+		</list>
+	</section>
+	<section name="ZipFileImportWizard">
+		<item key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
+		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\GREEN\Downloads\FinalSubject.zip"/>
+			<item value="C:\Users\GREEN\Downloads\etc.zip"/>
+			<item value="C:\Users\GREEN\Downloads\map01.zip"/>
+			<item value="C:\Users\GREEN\Downloads\OneDrive-2021-04-15.zip"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,17 @@
+package com.green.Controller;
+
+import com.green.storage.DB;
+
+public class Controller_Member {
+	private int session = -1;
+	
+	public Controller_Member(int idx) {
+		this.session = idx;
+		init();
+	}
+
+	private void init() {
+		System.out.println("안녕하세요"+DB.members.get(session).getUserName()+"님");
+		
+	}
+}

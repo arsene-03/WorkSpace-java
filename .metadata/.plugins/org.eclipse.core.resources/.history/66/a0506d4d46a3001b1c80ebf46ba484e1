@@ -1,0 +1,51 @@
+package com.green.Controller;
+
+import com.green.View.ViewMember;
+import com.green.storage.DB;
+
+public class ControllerMember {
+	public int session = -1;
+	
+	public ControllerMember(int idx) {
+		this.session = idx;
+		init();
+	}
+
+	private void init() {
+		
+		boolean run = true;
+	
+		while(run) {
+			int selectMenu=	ViewMember.membersMenu(session);
+			switch(selectMenu) {
+			case 1:// 글 목록보기
+				break;
+			case 2:// 글쓰기
+				break;
+			case 3:// 자기 글 보기
+				break;
+			case 4://로그아웃
+				run = ViewMember.logOut();
+				
+				break;
+			default:
+				
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+	}
+}

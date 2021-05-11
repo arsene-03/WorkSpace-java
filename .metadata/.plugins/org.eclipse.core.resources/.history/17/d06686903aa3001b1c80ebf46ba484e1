@@ -1,0 +1,14 @@
+package com.green.q9;
+
+import java.util.Scanner;
+
+import com.green.q9.Controller;
+
+public class Main {
+	public static Scanner scan = new Scanner(System.in);
+	public static void main(String[] args) {
+		new Controller();
+
+	}
+
+}

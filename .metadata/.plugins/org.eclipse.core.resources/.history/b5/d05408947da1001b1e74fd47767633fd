@@ -1,0 +1,16 @@
+package test;
+
+public class Main01 {
+
+	public static void main(String[] args) {
+		Student students = new Student("green", "1234", "고길동");
+		
+		
+		
+		students.inputScores();
+		
+		students.result();
+		
+	}
+
+}

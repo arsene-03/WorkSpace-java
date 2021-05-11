@@ -1,0 +1,21 @@
+package test;
+
+public class Q2 {
+
+	public static void main(String[] args) {
+
+		//조건1. while 문으로 구구단
+		int i = 2; //단
+		while(i<9) {
+			System.out.println("****%d단****");
+			int j = 1;
+			while(j<9) {
+				System.out.printf("%d X %d = %d",i,j,i*j);
+				j++;
+			}
+			i++;
+		}
+
+	}
+
+}

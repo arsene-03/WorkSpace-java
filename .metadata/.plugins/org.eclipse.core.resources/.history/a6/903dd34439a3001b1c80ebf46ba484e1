@@ -1,0 +1,32 @@
+package com.green.q9;
+
+public class Controller {
+	
+	public Controller( ){
+		init();
+	}
+
+	private void init() {
+		boolean run = true;
+		int selectMenu = View.menu();
+		
+		while(run) { // 메인 메뉴
+			switch(selectMenu) {
+			case 1 : // 회원가입
+				break;
+			case 2 : // 로그인
+				break;
+			case 3 : // 비회원으로 게시물 조회
+				break;
+			case 4 : // 프로그램 종료
+				break;
+			default : View.userfault();
+				
+				
+				
+			}
+			
+		}
+		
+	}
+}

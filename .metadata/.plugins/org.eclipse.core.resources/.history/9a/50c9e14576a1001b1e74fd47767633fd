@@ -1,0 +1,50 @@
+package test;
+
+import java.util.Scanner;
+
+public class Q2 {
+
+	public static void main(String[] args) {
+
+		//조건1. while 문으로 구구단
+		
+		gugudan1();
+		
+		
+		System.out.println("\n------------조건2-------------\n");
+
+		//조건 2. do while 문으로 입력받은 단만
+		Scanner scan = new Scanner(System.in);
+		System.out.println("원하는 단의 숫자를 입력해주세요");
+		System.out.print("> ");
+		int dan = Integer.parseInt(scan.nextLine());
+		i = dan;
+		do {
+			System.out.printf("****%d단****\n",i);
+			int j = 1;
+			do {
+				System.out.printf("%d X %d = %d\n",i,j,i*j);
+				j++;
+			}while(i);
+			i++;
+		}while(i<=9);
+		
+		
+		
+	}
+
+	private static void gugudan1() {
+		int i = 2; //단
+		while(i<=9) {
+			System.out.printf("****%d단****\n",i);
+			int j = 1;
+			while(j<=9) {
+				System.out.printf("%d X %d = %d\n",i,j,i*j);
+				j++;
+			}
+			i++;
+		}
+		
+	}
+
+}

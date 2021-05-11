@@ -1,0 +1,7 @@
+package com.green.q9;
+
+import java.util.ArrayList;
+
+public class DB {
+	ArrayList<Board> boards = new ArrayList<>();
+}

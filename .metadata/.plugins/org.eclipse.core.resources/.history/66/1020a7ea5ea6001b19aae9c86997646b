@@ -1,0 +1,54 @@
+
+public class Q2 {
+	static String[] wishList= new String [6];
+	public static void main(String[] args) {
+		wishList = new String[] {"TV","냉장고","세탁기","에어컨","컴퓨터","전자레인지"};
+		int[] prices = new int [] {240,250,120,75,100,25};
+		int random = (int) (Math.random()*5+1);
+		rMethod(random);
+		maxMethod(prices);
+		puchasedMethod(prices);
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+	private static void puchasedMethod(int[] prices) {
+		int sum = 0;
+		double avg;
+		for(int i =0;i<=6 ;i++) {
+			sum =+ prices[i];
+		}
+		avg = sum/6.0;
+		System.out.println(avg);
+	}
+
+	private static void maxMethod(int[] prices) {
+		String product = "";
+		int max = 0;
+		int idx = -1;
+		for(int i=0;i<=6;i++) {		
+			if(max<prices[i]) {
+				max = prices[i];
+				idx=i;
+				 product = wishList[i];
+			}
+		}
+		System.out.println("가장 비싼 품목은");
+		System.out.println("품목: "+product+"/가격: " +max);
+	}
+
+	private static void rMethod(int random) {
+		String product = wishList[random];
+		System.out.println("품목 : "+product);
+		
+	}
+
+	
+
+}

@@ -1,0 +1,18 @@
+package com.green.Controller;
+
+import com.green.View.ViewMember;
+import com.green.storage.DB;
+
+public class ControllerMember {
+	private int session = -1;
+	
+	public ControllerMember(int idx) {
+		this.session = idx;
+		init();
+	}
+
+	private void init() {
+		ViewMember.membersMenu(session);
+		
+	}
+}

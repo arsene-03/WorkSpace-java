@@ -1,0 +1,41 @@
+package com.green.View;
+
+import com.green.main.Main;
+
+public class View {
+
+	public static int menu() { // 메인메뉴
+		System.out.println("\n***게시판을 실행합니다.***");
+		System.out.println("원하는 기능의 번호를 입력해 주세요.");
+		System.out.println("1. 회원가입");
+		System.out.println("2. 로그인");
+		System.out.println("3. 비회원으로 게시물 조회하기");
+		System.out.println("4. 프로그램 종료");
+		System.out.print("> ");
+		int selectMenu = select();
+		return selectMenu;
+		
+	}
+
+	private static int select() {
+		try {
+			int select = Integer.parseInt(Main.scan.nextLine());
+			return select;
+		}catch (NumberFormatException err){
+			
+		}
+		return 0;
+	}
+
+	public static void userfault() { // 잘못입력
+		System.out.println("\n*잘못 입력했습니다.*");
+		System.out.println("*다시 입력해주세요*.");
+		
+	}
+
+	public static void exitProgran() {// 4. 프로그램 종료
+		System.out.println("프로그램을");
+		
+	}
+
+}

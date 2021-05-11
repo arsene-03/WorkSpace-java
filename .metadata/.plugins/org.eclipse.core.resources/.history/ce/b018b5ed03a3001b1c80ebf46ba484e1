@@ -1,0 +1,60 @@
+package com.green.controller;
+
+import com.green.view.ViewBuyer;
+
+
+public class ControllerBuyer {
+	public static int session = -1;
+
+	public ControllerBuyer(int idx) {
+		this.session = idx;
+		init();
+	}
+
+	private void init() {
+		int selectMenu=ViewBuyer.menu();
+
+		while(true) {
+			switch(selectMenu) {
+			case 1: //물품목록보기
+				ViewBuyer.productList();
+				break;
+			case 2://장바구니보기
+				ViewBuyer.basketList();
+				break;
+			case 3://개인정보 보기
+				info();
+				break;
+			case 4://로그아웃
+				if(ViewBuyer.logout()) {
+					session = -1;
+					return;
+				}
+				break;
+			default:
+				ViewBuyer.userError();
+			}
+
+		}
+
+	}
+
+	private static int void info() {
+		
+		int selectPrivateMenu = ViewBuyer.infoPrt(session);
+		
+		switch(selectPrivateMenu) {
+		case 1: // 비밀번호 변경
+			break;
+		case 2: // 캐시 충전
+			break;
+		case 3: // 캐시 환금
+			break;
+		case 4: // 돌아가기
+			break;
+			default:
+				ViewBuyer.userError();
+		}
+		
+	}
+}

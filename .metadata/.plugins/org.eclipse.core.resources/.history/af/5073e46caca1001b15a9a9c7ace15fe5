@@ -1,0 +1,18 @@
+package com.green.view;
+
+import com.green.main.Main;
+
+public class ViewBuyer {
+
+	public static int menu() {
+		System.out.println("저희 쇼핑몰에 오신것을 환영합니다.");
+		System.out.println("1. 물품목록 보기");
+		System.out.println("2. 장바구니 보기");
+		System.out.println("3. 개인정보 보기");
+		System.out.println("4. 로그아웃");
+		int selectNum = Integer.parseInt(Main.scan.nextLine());
+		
+		return selectNum;
+	}
+
+}

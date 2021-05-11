@@ -1,0 +1,9 @@
+package ex01;
+
+public class Value01 {
+
+	public Value01(int i) {
+		
+	}
+
+}

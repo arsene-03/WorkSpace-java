@@ -1,0 +1,15 @@
+package ex01;
+
+public class Main_class {
+
+	public static void main(String[] args) {
+		Card01 card1 = new Card01();
+		Class clazz1 = card1.getClass();
+		
+		Card01 card1_1 = (Card01)clazz1.newInstance();
+		
+		System.out.println(card1.String());
+
+	}
+
+}

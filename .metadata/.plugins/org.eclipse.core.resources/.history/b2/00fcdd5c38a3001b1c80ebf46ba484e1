@@ -1,0 +1,13 @@
+package com.green.q9;
+
+public class Controller {
+	
+	public Controller( ){
+		init();
+	}
+
+	private void init() {
+		View.menu();
+		
+	}
+}
